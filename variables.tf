@@ -28,5 +28,7 @@ variable "associate_public_ip_address" {
 variable "ami_id" {
 }
 
-variable "region" {
+variable "extra_tags" {
+  type = map
+  default = {}
 }

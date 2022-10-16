@@ -34,6 +34,7 @@ resource "aws_instance" "instance_ec2" {
   user_data                   = var.user_data == "" ? null : file("${var.user_data}")
   associate_public_ip_address = var.associate_public_ip_address
 
-  tags = {
-  Name = "${var.prefix}-${count.index + 1}" }
+  tags = merge({
+    Name = "${var.prefix}-${count.index + 1}"
+  }, var.extra_tags)
 }
