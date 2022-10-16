@@ -14,11 +14,11 @@ module "example" {
 
 	 # Required variables
 	 ami_id  = 
-	 region  = 
 	 security_group_id  = 
 
 	 # Optional variables
 	 associate_public_ip_address  = false
+	 extra_tags  = {}
 	 instance_type  = "t2.micro"
 	 prefix  = "webapp"
 	 servers  = 1
@@ -40,9 +40,9 @@ module "example" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_ami_id"></a> [ami\_id](#input\_ami\_id) | n/a | `any` | n/a | yes |
 | <a name="input_associate_public_ip_address"></a> [associate\_public\_ip\_address](#input\_associate\_public\_ip\_address) | n/a | `bool` | `false` | no |
+| <a name="input_extra_tags"></a> [extra\_tags](#input\_extra\_tags) | n/a | `map` | `{}` | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `string` | `"t2.micro"` | no |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | n/a | `string` | `"webapp"` | no |
-| <a name="input_region"></a> [region](#input\_region) | n/a | `any` | n/a | yes |
 | <a name="input_security_group_id"></a> [security\_group\_id](#input\_security\_group\_id) | n/a | `any` | n/a | yes |
 | <a name="input_servers"></a> [servers](#input\_servers) | n/a | `number` | `1` | no |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | n/a | `string` | `""` | no |
