@@ -34,6 +34,12 @@ resource "aws_instance" "instance_ec2" {
   user_data                   = var.user_data == "" ? null : file("${var.user_data}")
   associate_public_ip_address = var.associate_public_ip_address
 
+  root_block_device {
+    volume_size           = var.volume_size
+    volume_type           = var.volume_type
+    delete_on_termination = var.detele_on_termination
+  }
+
   tags = merge({
     Name = "${var.prefix}-${count.index + 1}"
   }, var.extra_tags)
