@@ -55,8 +55,8 @@ module "example" {
 
 | Name | Description |
 |------|-------------|
-| <a name="output_availability_zone"></a> [availability\_zone](#output\_availability\_zone) | n/a |
-| <a name="output_instances_id"></a> [instances\_id](#output\_instances\_id) | n/a |
-| <a name="output_ip_address"></a> [ip\_address](#output\_ip\_address) | n/a |
-| <a name="output_private_key"></a> [private\_key](#output\_private\_key) | n/a |
+| <a name="output_availability_zone"></a> [availability\_zone](#output\_availability\_zone) | Availability zone of the instance |
+| <a name="output_instances_id"></a> [instances\_id](#output\_instances\_id) | ID of the instance |
+| <a name="output_ip_address"></a> [ip\_address](#output\_ip\_address) | Public IP address of the instance |
+| <a name="output_private_key"></a> [private\_key](#output\_private\_key) | Private key of the instance |
 <!-- END_AUTOMATED_TF_DOCS_BLOCK -->
